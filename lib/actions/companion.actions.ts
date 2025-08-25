@@ -107,6 +107,9 @@ export const getUserCompanions = async (userId: string) => {
     return data;
 }
 
+
+
+
 export const newCompanionPermissions = async () => {
     const { userId, has } = await auth();
     const supabase = createSupabaseClient();
