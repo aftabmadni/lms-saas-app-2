@@ -12,10 +12,10 @@ const Page = async () => {
     const recentSessionsCompanions = await getRecentSessions(10);
 
     return (
-        <main>
+        <main className="mb-1.5">
             <h1>Popular Companions</h1>
 
-            <section className="home-section">
+            <section className="home-section grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
                 {companions.map((companion) => (
                     <CompanionCard
                         key={companion.id}
